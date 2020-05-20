@@ -1,0 +1,397 @@
+@import "./variables.scss";
+
+// ------ G L O B A L E S ------------- //
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    height: 10vh;
+    width: 80vw;
+    padding: 0 10vw;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+.btn_red{
+    @include btn_red;
+    border: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    font-size: 90px;
+    width: 30vw;
+}
+h2{
+    font-size: 60px;
+}
+h3{
+    font-size: 40px;
+}
+h5{
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.31em;
+    height: 400;
+}
+p{
+    font-size: 20px;
+}
+
+// ------ H E A D E R ------------- //
+.cont_header{
+    position: relative; 
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.cont_header img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+.header_txt{
+    padding: 10vh 10vw;
+    width: 25vw;
+    height: 80vh;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    background: rgb(0, 34, 85);
+    background: rgba(0, 34, 85, 0.66);
+}
+
+//------ B A R R A - D E - N A V E G A C I Ó N -------//
+.logo{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.menu{
+    @include flex-row;
+    justify-content: flex-end;
+    width: 57vw;
+}
+.navigation_bar{
+    @include flex-row;
+    justify-content: space-between;
+    width: 17vw;
+    margin-right: 2vw;
+    align-items: center;
+}
+.menu button{
+    margin-right: 2vw;
+    width: 6vw;
+    height: 4vh;
+    font-size: 1em;
+    font-weight: 700;
+}
+.log_in{
+    padding-top: 1vh;
+    color: #fff;
+}
+
+//----- H E A D E R - T E X T ------//
+.prin_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6vh 0;
+    height: 70vh;
+}
+.prin_text p{
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    width: 18vw;
+}
+.ver_mas{
+    @include flex-row;
+    align-items: baseline;
+    letter-spacing: 0.03em;
+    font-size: 1.4em;
+}
+.ver_mas i{
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+.social{
+    @include flex-row;
+    justify-content: space-between;
+    width: 10vw;
+    font-size: 2em
+}
+//------- S U G E R I D O S -------//
+.sugeridos{
+    width: 79vw;
+    background-color: #fff;
+    @include flex-row;
+    padding: 20vh 10vw;
+}
+.sug-info{
+    width: 20vw;
+    margin-right: 15vw;
+}
+.sug-info h5{
+    color: rgb(0, 34, 85);
+    margin-bottom: 40px;
+}
+.sug-info h2{
+    color: rgb(0, 34, 85);
+    margin-bottom: 28px;
+}
+.sug-info p{
+    color: rgb(0, 34, 85);
+}
+.days{
+    @include flex-row;
+    align-items: center;
+    width: 15vw;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px rgb(0, 34, 85);
+    margin: 40px 0;
+}
+.icon-day{
+    width: 40px;
+    height: 40px;
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(0, 34, 85);
+    border-radius: 5px 0 0 5px;
+    p{
+        color: rgb(0, 34, 85); 
+    }
+    i{
+        color: #fff;
+    }
+}
+.discount{
+    @include flex-row;
+    color: #D82855;
+}
+.discount-icon{
+    width: 50px;
+    height: 40px;
+    background-color: #D82855;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+//----------- S U G - I M A G E S -------------------//
+.sug-offers{
+    width: 45vw;
+    height: 70vh;
+    padding: 0 5px;
+    @include flex-row;
+    justify-content: space-between;
+}
+.off-info{
+    width: 20vw;
+    height: 65vh;
+    border-radius: 12px;
+    overflow-y: hidden;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+//----------- D E S T I N O S --------------------//
+
+.dest-intro{
+    text-align: center;
+    h5, h2{
+        color: #002255;
+        margin-bottom: 40px;
+    }
+}
+.new-product{
+    margin-top: 40px;
+    @include flex-row;
+}
+.resalt{
+    color: #D82855;
+}
+.btn-drop{
+    margin: auto;
+    width: 39vw;
+    @include flex-row;
+    justify-content: space-between;
+    button{
+        width: 250px;
+        height: 80px;
+        font-size: 30px;
+        border-radius: 10px;
+        @include flex-row;
+        justify-content: center;
+        align-items: center;
+        i{
+            padding-left: 20px;
+        }
+    }
+}
+.des-dropdown{
+    background-color: #D82855;
+    color: #fff;
+    border: none;
+}
+.price-dropdown{
+    background-color: #fff;
+    color: #D82855;
+    border: solid 1px #D82855;
+}
+.dest-highlight{
+    width: 715px;
+    height: 550px;
+    @include flex-row;
+    align-items: center;
+    overflow-y: hidden;
+    img{
+        width: 516px;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.vertical-align{
+    color: #fff;
+    background-color: #002255;
+    text-align: center;
+    width: 200px;
+    height: 550px;
+    h3{
+        transform: rotate(-90deg);
+        transform-origin: center 40%;
+        float: left;
+        margin-top: 250px;
+    }
+}
+.high-card{
+    width: 800px;
+    height: 582px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.new{
+    width: 55px;
+    height: 67px;
+    background-color: #D82855;
+    margin: auto;
+    padding-top: 15px;
+    position: relative;
+    left: 205px;
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 154.91%;
+    letter-spacing: 0.31em;
+    i{
+        font-size: 35px;
+    }
+}
+.card{
+    width: 650px;
+    height: 490px;
+    position: relative;
+    top: -50px;
+    background: #FFFFFF;
+    box-shadow: 8px 8px 26px rgba(0, 34, 85, 0.25);
+}
+
+.img-high{
+    background-image: 
+    linear-gradient(#3a71c475, #002255),
+    url(/resources/img/santorini-greece-164284.jpg);
+    height: 150px;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: #FFFFFF;
+    padding: 30px 0 0 20px;
+}
+
+.info-high{
+    color: #002255;
+    padding: 10px 0 0 20px;
+}
+
+//ADD LINA
+
+.primer {
+    width: 306px;
+    height: 516px;
+    margin-left: 200px;
+    box-shadow: 8px 8px 26px rgba(0, 34, 85, 0.25);
+    border-radius: 10px;
+}
+
+.imagen {
+    width: 306px;
+    height: 343px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.boton {
+    border-bottom: none;
+    color: #D82855;
+    width: 79px;
+    height: 31px;
+    font-family: 'Sansita';
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.segundo {
+    margin-left: 550px;
+    margin-top: -516px;
+    background: #FFFFFF;
+    box-shadow: 8px 8px 26px rgba(0, 34, 85, 0.25);
+    border-radius: 10px;
+    width: 306px;
+    height: 516px;
+}
+
+.tercero {
+    margin-left: 900px;
+    margin-top: -516px;
+    background: #FFFFFF;
+    box-shadow: 8px 8px 26px rgba(0, 34, 85, 0.25);
+    border-radius: 10px;
+    width: 306px;
+    height: 516px;
+}
+
+.letra {
+    margin-left: 15px;
+    font-family: 'Sansita';
+    font-weight: bold;
+    color: #002255;
+}
+.letrita {
+    margin-left: 35px;
+    font-family: 'Sansita400';
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    color: #002255;
+}
