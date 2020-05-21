@@ -43,6 +43,13 @@ a {
   color: #fff;
 }
 
+hr {
+  width: 90%;
+  margin: 15px 20px;
+  border: 0;
+  border-bottom: dashed 2px #002255;
+}
+
 h1 {
   font-size: 90px;
   width: 30vw;
@@ -464,7 +471,7 @@ p {
   padding-top: 15px;
   position: relative;
   left: 205px;
-  z-index: 100;
+  z-index: 80;
   color: #fff;
   text-align: center;
   font-size: 10px;
@@ -499,7 +506,66 @@ p {
 
 .info-high {
   color: #002255;
-  padding: 10px 0 0 20px;
+  margin: 20px;
+}
+
+.day-plane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+}
+
+.info-days {
+  width: 230px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  border-radius: 5px;
+  border: solid 1px #002255;
+}
+
+.info-days i {
+  color: #fff;
+}
+
+.info-int {
+  color: #002255;
+  font-size: 15px;
+  letter-spacing: 0.31em;
+  font-weight: 700;
+  margin: 0 40px 0 20px;
+}
+
+.info-int p {
+  color: #6C6C6C;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 154.91%;
+  font-weight: 400;
+}
+
+.reserva {
+  width: 90%;
+  height: 40px;
+  margin: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5px;
 }
 
 .primer {

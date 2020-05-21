@@ -31,6 +31,12 @@ a{
     text-decoration: none;
     color: #fff;
 }
+hr{
+    width: 90%;
+    margin: 15px 20px;
+    border: 0;
+    border-bottom: dashed 2px #002255;
+}
 h1{
     font-size: 90px;
     width: 30vw;
@@ -173,12 +179,12 @@ p{
     margin-right: 20px;
     background-color: rgb(0, 34, 85);
     border-radius: 5px 0 0 5px;
-    p{
-        color: rgb(0, 34, 85); 
-    }
-    i{
-        color: #fff;
-    }
+        p{
+            color: rgb(0, 34, 85); 
+        }
+        i{
+            color: #fff;
+        }
 }
 .discount{
     @include flex-row;
@@ -210,21 +216,21 @@ p{
     border-radius: 12px;
     overflow-y: hidden;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 }
 
 //----------- D E S T I N O S --------------------//
 
 .dest-intro{
     text-align: center;
-    h5, h2{
-        color: #002255;
-        margin-bottom: 40px;
-    }
+        h5, h2{
+            color: #002255;
+            margin-bottom: 40px;
+        }
 }
 .new-product{
     margin-top: 40px;
@@ -246,9 +252,9 @@ p{
         @include flex-row;
         justify-content: center;
         align-items: center;
-        i{
-            padding-left: 20px;
-        }
+            i{
+                padding-left: 20px;
+            }
     }
 }
 .des-dropdown{
@@ -267,11 +273,11 @@ p{
     @include flex-row;
     align-items: center;
     overflow-y: hidden;
-    img{
-        width: 516px;
-        height: 100%;
-        object-fit: cover;
-    }
+        img{
+            width: 516px;
+            height: 100%;
+            object-fit: cover;
+        }
 }
 .vertical-align{
     color: #fff;
@@ -279,12 +285,12 @@ p{
     text-align: center;
     width: 200px;
     height: 550px;
-    h3{
-        transform: rotate(-90deg);
-        transform-origin: center 40%;
-        float: left;
-        margin-top: 250px;
-    }
+        h3{
+            transform: rotate(-90deg);
+            transform-origin: center 40%;
+            float: left;
+            margin-top: 250px;
+        }
 }
 .high-card{
     width: 800px;
@@ -300,16 +306,16 @@ p{
     padding-top: 15px;
     position: relative;
     left: 205px;
-    z-index: 100;
+    z-index: 80;
     color: #fff;
     text-align: center;
     font-size: 10px;
     font-weight: 700;
     line-height: 154.91%;
     letter-spacing: 0.31em;
-    i{
-        font-size: 35px;
-    }
+        i{
+            font-size: 35px;
+        }
 }
 .card{
     width: 650px;
@@ -319,21 +325,56 @@ p{
     background: #FFFFFF;
     box-shadow: 8px 8px 26px rgba(0, 34, 85, 0.25);
 }
-
 .img-high{
     background-image: 
-    linear-gradient(#3a71c475, #002255),
-    url(/resources/img/santorini-greece-164284.jpg);
+        linear-gradient(#3a71c475, #002255),
+        url(/resources/img/santorini-greece-164284.jpg);
     height: 150px;
     background-size: cover;
     background-blend-mode: multiply;
     color: #FFFFFF;
     padding: 30px 0 0 20px;
 }
-
 .info-high{
     color: #002255;
-    padding: 10px 0 0 20px;
+    margin: 20px;
+}
+.day-plane{
+    @include flex-row;
+    margin-top: 20px;
+}
+.info-days{
+    width: 230px;
+    height: 40px;
+    @include flex-row;
+    align-items: center;
+    margin-right: 30px;
+    border-radius: 5px;
+    border: solid 1px rgb(0, 34, 85);
+        i{
+            color: #fff;
+        }
+}
+.info-int{
+    color: #002255;
+    font-size: 15px;
+    letter-spacing: 0.31em;
+    font-weight: 700;
+    margin: 0 40px 0 20px;
+        p{
+            color: #6C6C6C;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 154.91%;
+            font-weight: 400;
+        }
+}
+.reserva{
+    width: 90%;
+    height: 40px;
+    margin: 20px;
+    justify-content: center;
+    padding-top: 5px;
 }
 
 //ADD LINA
