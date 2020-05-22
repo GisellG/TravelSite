@@ -378,12 +378,14 @@ p{
 }
 .lugares{
     @include flex-row;
+    align-items: center;
+    justify-content: space-around;
     margin: 20px;
     padding: 20px;
     height: 100vh;
 }
 .btn_slide{
-    font-size: 60px;
+    font-size: 40px;
     color: #002255;
 }
 .lug-slide{
