@@ -376,63 +376,56 @@ p{
     justify-content: center;
     padding-top: 5px;
 }
-
-//ADD LINA
-
-.primer {
+.lugares{
+    @include flex-row;
+    margin: 20px;
+    padding: 20px;
+    height: 100vh;
+}
+.btn_slide{
+    font-size: 60px;
+    color: #002255;
+}
+.lug-slide{
     width: 306px;
-    height: 516px;
-    margin-left: 200px;
+    height: 530px;
     box-shadow: 8px 8px 26px rgba(0, 34, 85, 0.25);
     border-radius: 10px;
+        img{
+            width: 306px;
+            height: 343px;
+            border-radius: 10px 10px 0px 0px;
+            object-fit: cover;
+        }
+        h3{
+            color: #002255;
+        }
 }
-
-.imagen {
-    width: 306px;
-    height: 343px;
-    border-radius: 10px 10px 0px 0px;
+.i-lug{
+    font-size: 23px;
 }
-
-.boton {
-    border-bottom: none;
+.lug_des{
+    padding: 10px 20px;
+        h3{
+            margin-bottom: 5px;
+        }
+}
+.lug-days{
+    font-size: 20px;
+    color: #002255;
+    margin-top: 5px;
+        i{
+            font-size: 18px;
+        }
+}
+.mas_lugares{
+    @include flex-row;
     color: #D82855;
-    width: 79px;
-    height: 31px;
-    font-family: 'Sansita';
-    margin-left: 120px;
-    cursor: pointer;
-}
-
-.segundo {
-    margin-left: 550px;
-    margin-top: -516px;
-    background: #FFFFFF;
-    box-shadow: 8px 8px 26px rgba(0, 34, 85, 0.25);
-    border-radius: 10px;
-    width: 306px;
-    height: 516px;
-}
-
-.tercero {
-    margin-left: 900px;
-    margin-top: -516px;
-    background: #FFFFFF;
-    box-shadow: 8px 8px 26px rgba(0, 34, 85, 0.25);
-    border-radius: 10px;
-    width: 306px;
-    height: 516px;
-}
-
-.letra {
-    margin-left: 15px;
-    font-family: 'Sansita';
-    font-weight: bold;
-    color: #002255;
-}
-.letrita {
-    margin-left: 35px;
-    font-family: 'Sansita400';
-    font-weight: normal;
-    letter-spacing: 0.03em;
-    color: #002255;
+    font-size: 18px;
+    margin-top: 20px;
+        i{
+            margin: 3px 10px 0 0;
+            font-size: 16px;
+            color: #D82855;
+        }
 }
