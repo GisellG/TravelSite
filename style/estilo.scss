@@ -53,6 +53,9 @@ h5{
     letter-spacing: 0.31em;
     height: 400;
 }
+h6{
+    font-size: 10px;
+}
 p{
     font-size: 20px;
 }
@@ -377,12 +380,12 @@ p{
     padding-top: 5px;
 }
 .lugares{
+    height: 80vh;
     @include flex-row;
     align-items: center;
     justify-content: space-around;
     margin: 20px;
     padding: 20px;
-    height: 100vh;
 }
 .btn_slide{
     font-size: 40px;
@@ -430,4 +433,80 @@ p{
             font-size: 16px;
             color: #D82855;
         }
+}
+
+//vuelos
+.vuelos{
+    padding: 0 20vh;
+    margin-bottom: 20px;
+        i{
+            margin: 5px 10px 0 0;
+        }
+}
+.vuelos_grid{
+    @include flex-row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vuelo_ind{
+    width: 350px;
+    height: 180px;
+    border: solid 1px #CFCFCF;
+    padding: 20PX;
+    margin-bottom: 25px;
+    color: #002255;
+        h6{
+            letter-spacing: 0.31em;
+            margin-bottom: 15px;
+        }
+        hr{
+            margin: 0;
+        }
+}
+.date{
+    @include flex-row;
+    align-items: center;
+    margin: 10px 0 15px 0;
+    i{
+        margin: 0 10px;
+        color: #D82855;
+    }
+}
+.price{
+    @include flex-row;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: 700;
+    i{
+        margin-right: 10px;
+    }
+}
+.mas_ofertas{
+    @include flex-row;
+    justify-content: flex-end;
+    button{
+        width: 190px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+//footer
+
+.legal{
+    background-color: #002255; 
+    font-size: 13px;
+    @include flex-row;
+    justify-content: space-between;
+    color: #fff;
+    padding: 40px 20vh;
+    li{
+        margin: 12px 0;
+    }
+}
+.list_title{
+    font-size: 14px;
+    letter-spacing: 0.31em;
+    margin-bottom: 40px;
 }
